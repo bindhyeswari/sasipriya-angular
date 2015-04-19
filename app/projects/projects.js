@@ -1,8 +1,8 @@
-angular.module('bugTracker.projects', []).config(function ($routeProvider) {
+angular.module('bugTracker.projects', ['ngRoute']).config(function ($routeProvider) {
     $routeProvider.when('/projects', {
-        templateUrl: 'app/projects/_projects.html',
+        templateUrl: 'projects/_projects.html',
         controller: 'ProjectsController'
     });
-}).controller('ProjectsController', function ($scope) {
+}).controller('ProjectsController', ['$scope', function (sc) {
 
-});
+}]);
